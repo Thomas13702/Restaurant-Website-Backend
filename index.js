@@ -10,7 +10,7 @@ connectDB();
 
 //Middleware
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ extended: false }));
 
 //Import routes
 const bookingRoute = require("./routes/booking");
